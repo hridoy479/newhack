@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Beautiful Signup Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: white;
+      padding: 20px;
+    }
+    .container h1 {
+      color: #333333;
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container p {
+      color: #666666;
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container form input {
+      width: 80%;
+      height: 40px;
+      border: 2px solid #333333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .container form input[type="button"] {
+      width: 40%;
+      height: 60px;
+      border: none;
+      background-color: #ff9900;
+      color: white;
+      font-size: 24px;
+      cursor:pointer;
+    }
+    #close{
+      font-size: 35px;
+      position: fixed;
+      right:20px;
+      cursor: pointer;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1 id="close" onclick="location.href='index.html'">x</h1>
+  <div class="container">
+    <h1>Beautiful Signup Form</h1>
+    <p>Please fill in the details below to create an account.</p>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Email">
+      <input type="password" name="password" placeholder="Password">
+      <input type="button" value="Sign Up" onclick="location.href = 'fakehack.html';">
+    </form>
+  </div>
+
+</body>
+</html>

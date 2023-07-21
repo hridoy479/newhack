@@ -1,0 +1,206 @@
+<html>
+<head>
+  <title>Beautiful Single Page Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: auto;
+      margin: auto;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      background-color: #333333;
+    }
+    .logo {
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    .menu {
+      display: flex;
+      list-style: none;
+      margin-right: 20px;
+    }
+    .menu li {
+      margin-left: 20px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+    }
+    .menu a:hover {
+      color: #ff9900;
+    }
+    .hero {
+      height: 600px;
+      background-image: url("https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhdXRpZnVsJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h1 {
+      color: white;
+      font-size: 64px;
+      text-align: center;
+    }
+    .content {
+      padding: 40px 0;
+    }
+    .content h2 {
+      color: #333333;
+      font-size: 48px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .content p {
+      color: #666666;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .content .cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    .content .card {
+      width: 30%;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .content .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .content .card h3 {
+      color: #333333;
+      font-size: 32px;
+      padding: 10px 20px; 
+    }
+    .content .card p {
+      color:#666666; 
+       font-size :18 px; 
+       padding :10 px 
+       20px; 
+       line-height :1.5; 
+     } 
+     .footer { 
+       height :80 px; 
+       background-color :#333333; 
+       display :flex; 
+       align-items :center; 
+       justify-content :center; 
+     } 
+     .footer p { 
+       color :white; 
+       font-size :24 px; 
+     } 
+     .sign{
+        margin-left:30px;
+        text-transform: uppercase;
+        background: #5cdb2e;
+        padding:20px;
+
+     }
+     .sign a:hover{
+        color:whitesmoke;
+     }
+   </style> 
+ </head> 
+ <body> 
+   <div class="container"> 
+     <div class="navbar"> 
+       <div class="logo">BSPW</div> 
+       <ul class="menu"> 
+         <li><a href="#home">Home</a></li> 
+         <li><a href="#about">About</a></li> 
+         <li><a href="#services">Services</a></li> 
+         <li><a href="#contact">Contact</a></li> 
+         <li><a href="sign.html" class="sign">Signup</a></li>
+       </ul> 
+     </div> 
+     <div class="hero" id="home"> 
+       <h1>Beautiful Single Page Website</h1> 
+     </div> 
+     <div class="content" id="about"> 
+       <h2>About Us</h2> 
+       <p>We are a team of web developers who love to create beautiful and functional websites.</p> 
+       <div class="cards"> 
+         <div class="card"> 
+           <img src="https://images.unsplash.com/photo-1505238680356-667803448bb6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGVzaWduZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Web Designer"> 
+           <h3>Web Design</h3> 
+           <p>We design websites that are responsive, user-friendly and aesthetically pleasing.</p> 
+         </div> 
+         <div class="card"> 
+           <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Web Developer"> 
+           <h3>Web Development</h3> 
+           <p>We develop websites that are fast, secure and scalable using the latest technologies.</p> 
+         </div> 
+         <div class="card"> 
+           <img src="https://th.bing.com/th/id/R.6cdcd299171248cab22a66d4441230e7?rik=GPUJHskIxJ6l6g&riu=http%3a%2f%2feducationcareerarticles.com%2fwp-content%2fuploads%2f2014%2f03%2fWeb-Marketing.jpg&ehk=jQtOo4lb9vPaJQAkX8fNn5RkZDCA2ctYaPwguV2TBXo%3d&risl=&pid=ImgRaw&r=0"> 
+           <h3>Web Marketing</h3> 
+           <p>We market websites that are optimized for search engines, social media and conversions.</p> 
+         </div> 
+       </div> 
+     </div> 
+     <div class="content" id="services"> 
+       <h2>Our Services</h2> 
+       <p>We offer a range of services to suit your needs and budget.</p> 
+       <div class="cards"> 
+         <div class="card"> 
+           <img src="https://images.unsplash.com/photo-1559521783-1d1599583485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bG9nb3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Logo Design"> 
+           <h3>Logo Design</h3> 
+           <p>We create logos that are unique, memorable and reflect your brand identity.</p> 
+         </div> 
+         <div class="card"> 
+           <img src="https://images.unsplash.com/photo-1493723843671-1d655e66ac1c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxvZyUyMHBvc3R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Blog Post"> 
+           <h3>Blog Post</h3> 
+           <p>We write blog posts that are engaging, informative and SEO-friendly.</p> 
+         </div> 
+         <div class="card"> 
+           <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW1haWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="Email Marketing"> 
+           <h3>Email Marketing</h3> 
+           <p>We design and send email campaigns that are personalized, relevant and effective.</p> 
+         </div>
+       </div>
+     </div>
+     <div class="content" id="contact">
+       <h2>Contact Us</h2>
+       <p>We would love to hear from you. Please fill out the form below and we will get back to you as soon as possible.</p>
+       <form action="#" method="post">
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <input type="text" name="name" placeholder="Name" style="width: 40%; height: 40px; border: 2px solid #333333; padding: 10px; margin-right: 20px;">
+            <input type="email" name="email" placeholder="Email" style="width: 40%; height: 40px; border: 2px solid #333333; padding: 10px;">
+          </div>
+          <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+            <textarea name="message" placeholder="Message" style="width: 80%; height: 200px; border: 2px solid #333333; padding: 10px;"></textarea>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <input type="button" onclick="location.href = 'fakehack.html';" value="Send" style="width: 20%; height: 60px; border: none; background-color: #ff9900; color: white; font-size: 24px;">
+            
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <p>© 2023 BSPW. All rights reserved.</p>
+    </div>
+  </body>
+ </html>
+ 
