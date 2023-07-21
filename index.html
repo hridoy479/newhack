@@ -1,6 +1,7 @@
 <html>
 <head>
   <title>Beautiful Single Page Website</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     * {
       margin: 0;
@@ -125,6 +126,12 @@
  </head> 
  <body> 
    <div class="container"> 
+    <div class="add" id="demo">
+      <img src="Ad.pn.png" alt="ddd">
+      <p onclick="document.getElementById('demo').innerHTML=''">X</p>
+    </div>
+
+
      <div class="navbar"> 
        <div class="logo">BSPW</div> 
        <ul class="menu"> 
@@ -201,6 +208,7 @@
     <div class="footer">
       <p>© 2023 BSPW. All rights reserved.</p>
     </div>
+    <script src="script.js"></script>
   </body>
  </html>
  
